@@ -1,0 +1,20 @@
+create database details;
+
+create table countries(
+
+country_id varchar(2),
+country_name varchar(40),
+region_id decimal(10,0),
+
+check( country_name in ('italy','india','china'))
+);
+
+insert into countries (country_id,country_name,region_id)
+ values (1, 'italy', 34278),
+        (2, 'china', 45738),
+        (3, 'italy', 84138),
+        (4, 'china', 40458),
+        (5, 'india', 39988),
+        (6, 'china', 74552),
+        (7, 'italy', 12321),
+        (8, 'india', 67452);
